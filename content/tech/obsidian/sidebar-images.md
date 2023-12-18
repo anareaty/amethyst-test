@@ -29,7 +29,7 @@ tags:
 
 Чтобы улучшить отображение картинки я написала такой css-сниппет:
 
-```
+```css
 :is(.mod-left-split, .mod-right-split) .workspace-tabs:has(.image-container):not(.mod-active) .workspace-tab-header-container {
     display: none;
 }
@@ -62,6 +62,6 @@ tags:
 
 После подключения сниппета картинка выглядит так:
 
-![](../../images/Screenshot_16.jpg)
+![[../../images/Screenshot_16.jpg|Screenshot_16.jpg]]
 
 Теперь она занимает всю область, без отступов, и выглядит более стильно. Верхняя панель скрыта и будет появляться только при клике на картинку.
