@@ -2,7 +2,7 @@
 date: 2024-01-23
 cssclasses:
   - page
-path: content/bloglink
+path: content/blog
 filename: _index
 title: Блог
 share: true

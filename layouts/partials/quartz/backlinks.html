@@ -1,30 +1,62 @@
-<h3>{{ i18n "backlinks" }}</h3>
-<ul class="backlinks">
-    {{$url := urls.Parse .Site.BaseURL }}
-    {{$host := strings.TrimRight "/" $url.Path }}
-    {{$curPage := strings.TrimPrefix $host (strings.TrimRight "/" .Page.RelPermalink)}}
-    {{$linkIndex := getJSON "/assets/indices/linkIndex.json"}}
-    {{$inbound := index $linkIndex.index.backlinks $curPage}}
-    {{$contentTable := getJSON "/assets/indices/contentIndex.json"}}
-    {{if $inbound}}
-    {{$backlinks := dict "SENTINEL" "SENTINEL"}}
-    {{range $k, $v := $inbound}}
-      {{$cleanedInbound := replace $v.source " " "-"}}
-      {{$ctx := $v.text}}
-      {{$backlinks = merge $backlinks (dict $cleanedInbound $ctx)}}
-    {{end}}
-    {{- range $lnk, $ctx := $backlinks -}}
-      {{$l := printf "%s%s/" $host $lnk}}
-      {{$l = cond (eq $l "//") "/" $l}}
-      {{with (index $contentTable $lnk)}}
-      <li>
-        <a href="{{$l}}" data-ctx="{{$ctx}}" data-src="{{$lnk}}" class="internal-link">{{index (index . "title")}}</a>
-      </li>
-      {{end}}
-    {{- end -}}
-    {{else}}
-    <li>
-      {{ i18n "no_backlinks" }}
-    </li>
-    {{end}}
-</ul>
+{{ $dir := $.File.Dir}}
+
+
+{{$dir := replace $dir `\` `/`}}
+
+
+
+{{ $re := printf "%s%s%s" `\[\[../` $dir $.File.BaseFileName }}
+
+{{ $re = replace $re `\[\[..//` `\[\[../`}}
+
+{{if eq $re `\[\[..//_index`}}
+  {{$re = `\[\[../_index`}}
+{{end}}
+
+
+
+{{ $backlinks := slice }}
+{{ range .Site.AllPages }}
+
+{{ $filedir := .File.Dir}}
+{{$filedir := replace $filedir `\` `/`}}
+
+
+
+{{$content := .RawContent}}
+{{$repl := printf `[[../%s` $filedir}}
+
+
+
+
+{{$fixedContent := replace $content `[[./` $repl}}
+{{$fixedContent := replace $fixedContent `..//` `../`}}
+
+
+
+
+   {{ if and (findRE $re $fixedContent) (not (eq $re .File.BaseFileName)) }}
+
+      {{ $backlinks = $backlinks | append . }}
+   {{ end }}
+{{ end }}
+
+
+
+<hr>
+
+{{ if gt (len $backlinks) 0 }}
+  <div class="bl-section">
+    <h4>Обратные ссылки</h4>
+    <div class="backlinks">
+      <ul>
+       {{ range $backlinks }}
+	  <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+       {{ end }}
+     </ul>
+    </div>
+  </div>
+{{ else  }}
+  <div class="bl-section">
+  </div>
+{{ end }}
