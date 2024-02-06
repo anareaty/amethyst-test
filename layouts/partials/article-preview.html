@@ -12,7 +12,7 @@
               
           </p>
 
-          {{ if .Truncated }}
+          {{ if or (.Params.summary)(.Truncated) }}
             <div>
               <a href="{{ .RelPermalink }}">Читать дальше…</a>
             </div>
