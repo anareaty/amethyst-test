@@ -14,13 +14,7 @@ base
     <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
 
 
-      <article class="markdown">
-  <h1>{{ .Title | title }}</h1>
-  {{ $taxonomies := index .Site.Taxonomies .Page.Type }}
-  {{ range $taxonomies }}
-    <div><a href="{{ .Page.Permalink }}">{{ .Page.Title }} <sup>{{ .Count }}</sup></a></div>
-  {{ end }}
-      </article>
+       {{template "main" .}}
 
       
       <label for="menu-control" class="hidden book-menu-overlay"></label>
