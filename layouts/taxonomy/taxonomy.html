@@ -13,6 +13,7 @@ base
     {{ partial "main-menu" . }}
     <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
       {{ partial "docs/taxonomy" . }}
+      {{ template "main" .}}
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
     {{ partial "main-toc" . }}
