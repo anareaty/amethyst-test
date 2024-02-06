@@ -19,7 +19,11 @@
       
       <label for="menu-control" class="hidden book-menu-overlay"></label>
     </div>
-    {{ template "toc" . }}
+    <aside class="book-toc">
+      <div class="book-toc-content">
+        {{ template "toc" . }} <!-- Table of Contents -->
+      </div>
+    </aside>
   </main>
   
 </body>
