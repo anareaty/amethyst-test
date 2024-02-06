@@ -11,3 +11,10 @@
 {{ define "toc" }}
   {{ partial "docs/taxonomy" . }}
 {{ end }}
+
+
+<ul>
+  {{ range .Site.Taxonomies.tags }}
+    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
+  {{ end }}
+</ul>
