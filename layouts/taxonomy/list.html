@@ -1,5 +1,3 @@
-taxonomy list
-
 {{ define "main" }}
 <article class="markdown">
   <h1>{{ .Title | title }}</h1>
@@ -13,10 +11,3 @@ taxonomy list
 {{ define "toc" }}
   {{ partial "docs/taxonomy" . }}
 {{ end }}
-
-
-<ul>
-  {{ range .Site.Taxonomies.tags }}
-    <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}</li>
-  {{ end }}
-</ul>

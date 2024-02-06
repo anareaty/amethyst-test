@@ -1,0 +1,12 @@
+ <article class="blog-header">
+          <h2 class="article-title">
+              <a href="{{ .RelPermalink }}">{{ partial "docs/title.html" . }}</a>
+          </h2>
+          {{ partial "docs/post-meta" . }}
+          <p>
+            {{partial "quartz/textprocessing" . }}
+          </p>
+          <p><a class="comment-link" href="{{ .RelPermalink }}#giscus">Оставить комментарий</a></p>
+     <hr>
+      </article>
+      

@@ -204,7 +204,7 @@ article {
     /*display: flex;
     flex-direction: column;  */
     margin: 0;
-    padding: 10px 50px;
+    padding: 5px 50px;
 }
 
 article a {
@@ -242,11 +242,11 @@ footer {
 
 
 .book-menu-content {
-    box-shadow: 1px 1px 10px 0px var(--color-shadow);
+    box-shadow: 1px 1px 5px 0px var(--color-shadow);
 }
  
 .book-toc-content {
-    box-shadow: -1px 1px 10px 0px var(--color-shadow);
+    box-shadow: -1px 1px 5px 0px var(--color-shadow);
 }
 
 
@@ -258,8 +258,11 @@ footer {
     padding-left: 5px;
 }
 
-
-
+@media screen and (min-width: 65rem) {
+.book-toc .book-toc-content {
+    padding: 1rem 0 !important;
+}
+}
 
 
 
@@ -334,7 +337,7 @@ footer {
 .blog-header {
  //  box-shadow: 0px 0px 5px 0px var(--color-base-35);
    /* border-radius: 10px;*/
-    margin-bottom: 20px;
+   /* margin-bottom: 20px;*/
 }
 
 .article-cover:not(.has-image) {

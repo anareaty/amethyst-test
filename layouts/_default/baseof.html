@@ -7,17 +7,38 @@
 
   {{ partial "bare-header" . }}
   {{ partial "quartz/search" . }}
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
+
   
   <main class="main-container">
     {{ partial "main-menu" . }}
+    
+
     <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
-      {{ partial "main-content" . }} <!-- Page Content -->
-      {{ partial "comments" . }} <!-- Comments block -->
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
+      {{template "main" .}}
     </div>
-    {{ partial "main-toc" . }}
+
+    {{ if default true (default .Site.Params.toc .Params.toc) }}
+      <aside class="book-toc">
+        <div class="book-toc-content">
+          {{ template "toc" . }}
+        </div>
+      </aside>
+    {{ end }}
+    
   </main>
   
 </body>
 </html>
+
+
+
+
+{{ define "main" }}
+    {{ partial "main-content" . }} <!-- Page Content -->
+    {{ partial "comments" . }} <!-- Comments block -->
+{{ end }}
+
+
+{{ define "toc" }}
+  {{ .TableOfContents }}
+{{ end }}

@@ -1,22 +1,5 @@
-<!DOCTYPE html>
-<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
 
-{{ partial "main-head" . }}
+{{ define "main" }}
+    {{ partial "main-content" . }} 
+{{ end }}
 
-<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
-
-  {{ partial "bare-header" . }}
-  {{ partial "quartz/search" . }}
-  <input type="checkbox" class="hidden toggle" id="menu-control" />
-  
-  <main class="main-container">
-    {{ partial "main-menu" . }}
-    <div class="book-page container">
-      {{ partial "main-content" . }}
-      <label for="menu-control" class="hidden book-menu-overlay"></label>
-    </div>
-    {{ partial "main-toc" . }}
-  </main>
-  
-</body>
-</html>
