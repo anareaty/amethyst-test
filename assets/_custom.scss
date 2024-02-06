@@ -259,7 +259,7 @@ footer {
 }
 
 @media screen and (min-width: 65rem) {
-.book-toc .book-toc-content {
+.book-toc .book-toc-content:has(#TableOfContents) {
     padding: 1rem 0 !important;
 }
 }
