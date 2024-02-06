@@ -1,3 +1,31 @@
+<!DOCTYPE html>
+<html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+
+{{ partial "main-head" . }}
+
+<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+base
+  {{ partial "bare-header" . }}
+  {{ partial "quartz/search" . }}
+  <input type="checkbox" class="hidden toggle" id="menu-control" />
+  
+  <main class="main-container">
+    {{ partial "main-menu" . }}
+    <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
+      {{ partial "docs/taxonomy" . }}
+      <label for="menu-control" class="hidden book-menu-overlay"></label>
+    </div>
+    {{ partial "main-toc" . }}
+  </main>
+  
+</body>
+</html>
+
+
+
+
+
+
 {{ define "main" }}
 <div class="taxonomy">
   {{ range sort .Paginator.Pages }}
@@ -11,4 +39,4 @@
 {{ define "toc" }}
   {{ partial "docs/taxonomy" . }}
 {{ end }}
-taxx
+
