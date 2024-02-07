@@ -1,7 +1,7 @@
 
 {{ define "main" }}
     {{ partial "main-content" . }} 
-    {{ range .Site.RegularPages.ByDate.Reverse | first 10 }}
+    {{ range .Site.RegularPages.ByPublishDate.Reverse | first 10 }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{end}}
 {{ end }}
