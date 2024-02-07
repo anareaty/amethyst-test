@@ -2,9 +2,8 @@
 {{ define "main" }}
     <article class="markdown">
       <h1 class="title">{{ partial "docs/title.html" . }}</h1>
-      {{ partial "docs/post-meta" . }}
       <div class="content">{{partial "quartz/textprocessing" . }}</div>
-    
+      <h3>Последние записи</h3>
       <ul>
         {{ range .Site.RegularPages.ByPublishDate.Reverse | first 10 }}
           <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
