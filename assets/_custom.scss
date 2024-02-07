@@ -217,8 +217,17 @@ article {
     padding: 5px 50px;
 }
 
+h1.feed-header {
+    padding: 0 50px;
+    margin-bottom: 0.5rem !important;
+}
+
 article a {
     font-weight: 400 !important;
+}
+
+article hr {
+    margin-bottom: 1em;
 }
 
 
@@ -230,6 +239,10 @@ article a {
 @media screen and (max-width: 52rem) {
     article {
         padding: 5px 0 5px 5px;
+    }
+
+    h1.feed-header {
+        padding: 0 0 0 5px;
     }
 }
 
