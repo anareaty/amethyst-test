@@ -132,6 +132,14 @@ h1, h2, h3, h4, h5, h6 {
     flex-shrink: 0;
 }
 
+@media screen and (min-width: 52rem) {
+    .menu-control-wrapper {
+        display: none;
+    }
+}
+
+
+
 .menu-control-wrapper label {
     height: 100%; 
 }
@@ -408,8 +416,10 @@ footer {
 .icon-bar-item,
 .icon-bar-item > a > svg,
 .icon-bar-item a,
+/*
 .darkmode,
 .darkmode label,
+*/
 .menu-search #search-icon,
 #toggle-label-light,
 #toggle-label-dark {
@@ -434,6 +444,8 @@ footer {
     position: static !important;
     float: none !important;
 }
+
+
 
 #toggle-label-light::after {
     display: none;
@@ -467,10 +479,26 @@ footer {
 }
 
 
+#toggle-label-light, #toggle-label-dark {
+    display: block !important;
+    margin: 0;
+}
+
+.darkmode svg {
+    position: static !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 450px) {
+    .darkmode {
+        padding: 0 !important;
+    }
+}
 
 
-
-
+header #search-icon {
+    margin-right: 5px;
+}
 
 
 
@@ -728,9 +756,11 @@ a.article-summary {
 
 
 @media (max-width: 450px){
+    /*
 .darkmode {
     padding: 0 !important;
 }
+*/
 
 .book-page {
 
