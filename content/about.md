@@ -11,6 +11,7 @@ blog: false
 toc: false
 collapse: false
 weight: 10
+layout: about
 Статус:
   - идея
 tags: 
