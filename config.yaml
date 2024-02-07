@@ -36,16 +36,21 @@ menu:
 #      url: "https://github.com/anareaty/anareaty.github.io"
 #      weight: 10
   social:
-        - identifier: github
-          name: GitHub
-          url: https://github.com/anareaty/
-          params:
-              icon: github-fill
-        - identifier: telegram
-          name: Telegram
-          url: https://t.me/anareaty
-          params:
-              icon: telegram-line
+    - identifier: github
+      name: GitHub
+      url: https://github.com/anareaty/
+      params:
+          icon: github-fill
+    - identifier: telegram
+      name: Telegram
+      url: https://t.me/anareaty
+      params:
+          icon: telegram-line
+    - identifier: mastodon
+      name: Mastodon
+      url: https://mastodon.social/@reaty
+      params:
+          icon: mastodon-fill
 
 
 params:
