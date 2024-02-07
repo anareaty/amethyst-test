@@ -1,8 +1,10 @@
 
 {{ define "main" }}
     {{ partial "main-content" . }} 
+<div>
     {{ range .Site.RegularPages.ByPublishDate.Reverse | first 10 }}
       <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
     {{end}}
+</div>
 {{ end }}
 
