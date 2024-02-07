@@ -6,7 +6,7 @@
       <h3>Последние записи</h3>
       <ul>
         {{ range .Site.RegularPages.ByPublishDate.Reverse | first 10 }}
-          <li>{{ partial "docs/date" (dict "Date" .Date "Format" "02.01.2006") }} — <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+          <li>{{ .Date.Format "2006-01-02" }} — <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
         {{end}}
       </ul>
     </article> 
