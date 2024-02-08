@@ -1,13 +1,3 @@
 {{ $fileName := .Params.filename }}
 {{ $pages := .Site.Pages }}
 {{ $children := slice }}
-
-{{ range $pages}}
-{{ if eq .Params.parent $fileName}}
-{{ $children = $children append . }}
-{{ end }}
-{{ end }}
-
-{{ if gt (len $children) 0 }}
-<div>Children</div>
-{{ end }}
