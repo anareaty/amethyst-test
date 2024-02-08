@@ -19,6 +19,7 @@ weight: 10
 Тип: "[[Публикации/Публикации]]"
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: pet-projects
 ---
 
 
