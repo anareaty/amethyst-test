@@ -19,6 +19,7 @@ tags:
 Тип: "[[Публикации/Публикации]]"
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: syncthing
 ---
 
 

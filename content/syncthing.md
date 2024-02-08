@@ -3,8 +3,8 @@ date: 2024-02-08
 cssclasses:
   - page
 path: content
-filename: pet-projects
-title: Мои проекты
+filename: syncthing
+title: Syncthing
 share: true
 menu: true
 blog: false
@@ -13,11 +13,9 @@ collapse: true
 weight: 10
 Тип: "[[Публикации/Публикации|Публикации]]"
 Статус:
-  - опубликовано
+  - идея
 tags: 
-Ресурс:
-  - "[[Paperless Forest|🌱 Paperless Forest]]"
-publishDate: 2024-02-08T12:36:00
+Ресурс: 
 parent: tech
 ---
 
