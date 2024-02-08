@@ -1,5 +1,5 @@
 {{ $fileName := .Params.filename }}
-{{ $pages := .Site.Pages }}
+{{ $pages := .Site.Pages.ByPublishDate.Reverse }}
 {{ $children := slice }}
 
 
