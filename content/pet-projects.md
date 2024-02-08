@@ -18,6 +18,7 @@ tags:
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
 publishDate: 2024-02-08T12:36:00
+parent: tech
 ---
 
 
