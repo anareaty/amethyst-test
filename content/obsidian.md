@@ -10,7 +10,7 @@ menu: true
 blog: false
 toc: false
 collapse: true
-weight: 10
+weight: 1
 Статус:
   - идея
 tags:
@@ -22,6 +22,7 @@ aliases:
 Тип: "[[Публикации/Публикации]]"
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: tech
 ---
 
 
