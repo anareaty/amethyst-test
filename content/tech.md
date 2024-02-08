@@ -10,7 +10,7 @@ menu: true
 blog: false
 toc: false
 collapse: true
-weight: 10
+weight: 2
 Тип: "[[Публикации/Публикации|Публикации]]"
 Статус:
   - идея
