@@ -4,7 +4,7 @@ cssclasses:
   - page
 path: content
 filename: pet-projects
-title: Пет-проекты
+title: Мои проекты
 share: true
 menu: true
 blog: false
