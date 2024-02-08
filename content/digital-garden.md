@@ -16,6 +16,7 @@ tags:
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
 Статус: 
+parent: internet
 ---
 
 
