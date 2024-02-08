@@ -21,6 +21,7 @@ weight: 13
 Тип: "[[Публикации/Публикации]]"
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+parent: writing
 ---
 
 
