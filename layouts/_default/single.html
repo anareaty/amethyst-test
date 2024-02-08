@@ -1,2 +1,6 @@
 
-{{ define "dummy" }}{{ end }}
+{{ define "main" }}
+{{ $fileName := .Params.filename }}
+
+{{ $fileName }}
+{{ end }}
