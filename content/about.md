@@ -8,7 +8,7 @@ filename: about
 title: Обо мне
 share: true
 menu: false
-blog: false
+feed: false
 toc: false
 collapse: false
 weight: 10
