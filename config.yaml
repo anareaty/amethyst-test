@@ -28,8 +28,8 @@ taxonomies:
 # Sidebar menu additional links
 menu:
   before:
-    - name: "Главная"
-      url: "/"
+    - name: "Лента"
+      url: "/blog"
       weight: 1
 #  after:
 #    - name: "Github"
