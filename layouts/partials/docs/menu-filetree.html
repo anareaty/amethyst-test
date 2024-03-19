@@ -1,8 +1,16 @@
 {{ $pages := where .Site.Pages "Params.menu" "==" true }}
 {{ $currentPageLink := .Page.RelPermalink}}
 {{ $topPages := where $pages "Params.weight" "<" 10}}
-<ul>
+{{ $bottomPages := where $pages "Params.weight" ">=" 10}}
+<ul class="menuTopPages">
 {{ range $topPages }}
+  {{if not .Params.parent}}
+    {{ template "section-children" (dict "page" . "currentPageLink" $currentPageLink) }}
+  {{end}}
+{{end}}
+</ul>
+<ul class="menuBottomPages">
+{{ range $bottomPages }}
   {{if not .Params.parent}}
     {{ template "section-children" (dict "page" . "currentPageLink" $currentPageLink) }}
   {{end}}
