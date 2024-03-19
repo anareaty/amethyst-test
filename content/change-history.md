@@ -14,11 +14,11 @@ publishDate: 2024-03-18T14:52:00
   - "[[Paperless Forest|🌱 Paperless Forest]]"
 tags: 
 path: content
-filename: История изменений
+filename: change-history
 parent: 
 title: История изменений
 share: true
-menu: true
+menu: false
 toc: false
 collapse: false
 weight: 1
@@ -26,7 +26,7 @@ weight: 1
 
 ### 18 марта 2024
 
-- 📄 [[История изменений|История изменений]]
+- 📄 [[change-history|История изменений]]
 
 ### 29 февраля 2024
 
