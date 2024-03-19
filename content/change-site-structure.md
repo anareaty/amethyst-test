@@ -4,7 +4,6 @@ publishDate: 2024-01-23T12:00:00
 cssclasses:
   - page
   - note
-path: content
 filename: change-site-structure
 title: Изменение структуры сайта
 share: true
