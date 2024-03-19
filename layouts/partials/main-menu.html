@@ -15,6 +15,13 @@
       {{ end }}
     </a>
   </div>
+  <div class="icon-bar-item">
+    <a href="/change-history" title="История изменений">
+      {{ with resources.Get "icons/account-circle-line.svg" }}
+          {{ .Content | safeHTML }}
+      {{ end }}
+    </a>
+  </div>
   {{- with .Site.Menus.social -}}
 
     {{ range . }}
