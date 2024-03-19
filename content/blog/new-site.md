@@ -8,7 +8,7 @@ filename: new-site
 title: Новый сайт! 🎉
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 10
