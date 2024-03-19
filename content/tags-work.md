@@ -3,7 +3,6 @@ date: 2023-09-29
 publishDate: 2023-09-29T00:00:00
 cssclasses:
   - note
-path: content/blog
 filename: tags-work
 title: Теги теперь работают!
 share: true

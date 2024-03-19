@@ -3,7 +3,6 @@ date: 2023-09-27
 publishDate: 2023-09-27T00:00:00
 cssclasses:
   - note
-path: content/blog
 filename: about-site-content
 title: О содержании сайта
 share: true

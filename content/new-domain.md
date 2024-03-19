@@ -3,7 +3,6 @@ date: 2023-10-03
 publishDate: 2023-10-03T00:00:00
 cssclasses:
   - note
-path: content/blog
 filename: new-domain
 title: У сайта новый домен! 😎
 share: true
