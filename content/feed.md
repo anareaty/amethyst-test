@@ -20,6 +20,7 @@ menu: true
 toc: false
 collapse: false
 weight: 1
+layout: feed
 ---
 
 feed
