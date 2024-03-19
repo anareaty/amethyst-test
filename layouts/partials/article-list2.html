@@ -1,6 +1,7 @@
 
 
     {{ $pages := where .Site.RegularPages "Params.blog" "==" true }}
+      {{ $pag := .Paginate ($pages) }}
       {{ range $pages.ByPublishDate.Reverse  }}
       {{ $image := .Params.cover_image }}
       {{ $tags := .Params.tags }}
