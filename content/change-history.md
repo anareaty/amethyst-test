@@ -13,7 +13,6 @@ publishDate: 2024-03-18T14:52:00
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
 tags: 
-path: content
 filename: change-history
 parent: 
 title: История изменений
