@@ -1,6 +1,6 @@
 
 
-    {{ $pages := where .Site.RegularPages "Params.blog" "==" true }}
+    {{ $pages := where .Site.RegularPages "Params.feed "==" true }}
     {{ $pag := .Paginate ($pages) }}
 
       {{ range $pag.Pages.ByPublishDate.Reverse  }}
