@@ -8,7 +8,7 @@ filename: about-site-structure
 title: О структуре сайта
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 10
