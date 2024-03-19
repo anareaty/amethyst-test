@@ -15,7 +15,7 @@ filename: _index
 title: Paperless forest
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 1
