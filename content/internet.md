@@ -2,6 +2,7 @@
 date: 2024-02-08
 cssclasses:
   - page
+  - note
 path: content
 filename: internet
 title: Интернет
@@ -10,12 +11,13 @@ menu: true
 blog: false
 toc: false
 collapse: true
-weight: 3
-Тип: "[[Публикации/Публикации|Публикации]]"
+weight: 30
+Тип: "[[Базовые заметки]]"
 Статус:
   - идея
 tags: 
 Ресурс: 
+Тема:
+  - "[[Публикации/Публикации|Публикации]]"
 ---
-
 
