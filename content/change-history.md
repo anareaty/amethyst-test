@@ -22,6 +22,7 @@ menu: false
 toc: false
 collapse: false
 weight: 1
+blog: true
 ---
 
 ### 18 марта 2024
