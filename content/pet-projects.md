@@ -8,7 +8,7 @@ filename: pet-projects
 title: Мои проекты
 share: true
 menu: true
-blog: false
+feed: false
 toc: false
 collapse: true
 weight: 10
