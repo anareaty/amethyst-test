@@ -5,7 +5,7 @@ cssclasses:
   - note
 path: content/blog
 filename: _index
-title: Блог
+title: Лента
 share: true
 menu: true
 blog: false
