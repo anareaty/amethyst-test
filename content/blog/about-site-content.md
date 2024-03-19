@@ -8,7 +8,7 @@ filename: about-site-content
 title: О содержании сайта
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 10
