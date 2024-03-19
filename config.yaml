@@ -27,10 +27,10 @@ taxonomies:
   
 # Sidebar menu additional links
 menu:
-  before:
-    - name: "Лента"
-      url: "/blog"
-      weight: 1
+#  before:
+#    - name: "Лента"
+#      url: "/blog"
+#      weight: 1
 #  after:
 #    - name: "Github"
 #      url: "https://github.com/anareaty/anareaty.github.io"
