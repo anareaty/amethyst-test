@@ -3,6 +3,7 @@ date: 2023-05-26
 publishDate: 2023-05-26T00:00:00
 cssclasses:
   - hide-props-for-blog
+  - note
 path: content
 parent: obsidian
 filename: obsidian-quickadd-how-to-run-scripts
@@ -13,14 +14,16 @@ blog: false
 toc: true
 collapse: false
 weight: 10
-Тип: "[[Публикации/Публикации]]"
+Тип: "[[Базовые заметки]]"
 tags:
   - Obsidian
   - QuickAdd
-Статус:
-  - опубликовано
+Статус заметки:
+  - ✨ закончено
+  - 🌍 опубликовано
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
+Тема: 
 ---
 
 
