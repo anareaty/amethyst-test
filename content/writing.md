@@ -9,7 +9,7 @@ filename: writing
 title: Писательство
 share: true
 menu: true
-blog: false
+feed: false
 toc: false
 collapse: true
 weight: 40

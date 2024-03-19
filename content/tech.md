@@ -8,7 +8,7 @@ filename: tech
 title: Технологии
 share: true
 menu: true
-blog: false
+feed: false
 toc: false
 collapse: true
 weight: 20

@@ -18,13 +18,13 @@ filename: change-history
 parent: 
 title: История изменений
 share: true
+feed: true
 menu: false
 toc: false
 collapse: false
 weight: 1
-blog: true
 ---
-Тест
+
 ### 18 марта 2024
 
 - 📄 [[change-history|История изменений]]

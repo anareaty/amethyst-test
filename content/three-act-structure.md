@@ -11,7 +11,7 @@ filename: three-act-structure
 title: Трёхактная структура
 share: true
 menu: true
-blog: false
+feed: false
 toc: true
 collapse: false
 weight: 13

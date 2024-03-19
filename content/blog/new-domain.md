@@ -8,7 +8,7 @@ filename: new-domain
 title: У сайта новый домен! 😎
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 10

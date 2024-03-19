@@ -8,7 +8,7 @@ filename: obsidian
 title: Obsidian
 share: true
 menu: true
-blog: false
+feed: false
 toc: false
 collapse: true
 weight: 1

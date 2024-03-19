@@ -8,7 +8,7 @@ filename: tags-work
 title: Теги теперь работают!
 share: true
 menu: false
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 10
