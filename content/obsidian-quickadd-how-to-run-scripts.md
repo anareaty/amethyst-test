@@ -10,7 +10,7 @@ filename: obsidian-quickadd-how-to-run-scripts
 title: Obsidian QuickAdd - как запускать скрипты
 share: true
 menu: true
-blog: false
+feed: false
 toc: true
 collapse: false
 weight: 10
