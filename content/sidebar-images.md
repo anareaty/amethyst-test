@@ -9,7 +9,7 @@ filename: sidebar-images
 title: Css для картинок в сайдбаре
 share: true
 menu: true
-blog: false
+feed: false
 toc: false
 collapse: false
 weight: 10
