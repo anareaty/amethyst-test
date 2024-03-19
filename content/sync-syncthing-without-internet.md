@@ -9,7 +9,7 @@ filename: sync-syncthing-without-internet
 title: Синхронизация через Syncthing без интернета
 share: true
 menu: true
-blog: true
+feed: true
 toc: false
 collapse: false
 weight: 
