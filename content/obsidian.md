@@ -1,7 +1,8 @@
 ---
 date: 2023-09-08
 publishDate: 2023-09-08T00:00:00
-cssclasses: 
+cssclasses:
+  - note
 path: content
 filename: obsidian
 title: Obsidian
@@ -11,19 +12,21 @@ blog: false
 toc: false
 collapse: true
 weight: 1
-Статус:
-  - идея
+Статус заметки:
+  - 📝 дописать
+  - 🌍 опубликовано
 tags:
   - Obsidian
 aliases:
   - Обсидиан
   - Obsidian
 Блог: "[[Paperless Forest]]"
-Тип: "[[Публикации/Публикации]]"
+Тип: "[[Базовые заметки]]"
 Ресурс:
   - "[[Paperless Forest|🌱 Paperless Forest]]"
 parent: tech
+Тема:
+  - "[[Публикации/Публикации|Публикации]]"
 ---
-
 
 Obsidian — приложение для заметок. 
