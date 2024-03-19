@@ -9,7 +9,7 @@ filename: how-to-reuse-dataviewjs-code
 title: Как переиспользовать код с помощью dataviewjs
 share: true
 menu: true
-feed: false
+feed: true
 toc: false
 collapse: false
 weight: 

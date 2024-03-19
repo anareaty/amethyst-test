@@ -17,7 +17,7 @@ filename: change-history
 parent: 
 title: История изменений
 share: true
-feed: true
+feed: false
 menu: false
 toc: false
 collapse: false

@@ -9,7 +9,7 @@ filename: Canvas-style-menu-settings
 title: Пресет настроек для плагина Canvas Style Menu
 share: true
 menu: true
-feed: false
+feed: true
 toc: false
 collapse: false
 weight: 10

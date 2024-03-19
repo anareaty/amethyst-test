@@ -8,7 +8,7 @@ filename: custom-checkboxes
 title: Кастомные чекбоксы в Obsidian
 share: true
 menu: true
-feed: false
+feed: true
 toc: false
 collapse: false
 weight: 10

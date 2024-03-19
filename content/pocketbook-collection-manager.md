@@ -18,7 +18,7 @@ parent: pet-projects
 title: Менеджер коллекций для Покетбука
 share: true
 menu: true
-feed: false
+feed: true
 toc: false
 collapse: false
 weight: 10
