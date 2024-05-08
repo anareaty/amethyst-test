@@ -878,13 +878,13 @@ header #search-icon, .menu-search #search-icon {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   color: var(--body-font-color);
-  background-color: rgba(var(--color-purple-rgb), 0.4);
+  background-color: rgba(var(--color-purple-rgb), 0.5);
   text-decoration: none;
   border-radius: 5px;
 }
 
 .mastodon-feed div.header a.follow-button:hover {
-  background-color: rgba(var(--color-purple-rgb), 0.2);
+  background-color: rgba(var(--color-purple-rgb), 0.3);
 }
 
 .mastodon-feed div.header a:hover {
