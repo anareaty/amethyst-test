@@ -3,17 +3,15 @@
     <article class="markdown">
       <h1 class="title">{{ partial "docs/title.html" . }}</h1>
       <div class="content">{{partial "quartz/textprocessing" . }}</div>
-      <h3>Мои посты на Mastodon</h3>
+      <h3>{{ with resources.Get "icons/mastodon-fill.svg" }}
+        <span class="inline-icon">{{ .Content | safeHTML }}</span>
+    {{ end }}
+    Мои посты на Mastodon</h3>
       
 
 <p>
     <div id="mastodon-feed" class="mastodon-feed"></div>
     <script>
-      var i18n = {
-        followOnMastodon: "followOnMastodon",
-        viewOnMastodon: "viewOnMastodon",
-        publishedDateOnMastodon: "publishedDateOnMastodon"
-      };
       var mastodonProfile = "{{ .Site.Params.mastodon }}";
       var maxItems = "{{ default 5 .Site.Params.mastodonMaxItems }}"
 

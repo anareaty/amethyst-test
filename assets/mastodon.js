@@ -18,6 +18,9 @@ fetch(mastodonProfile + '.rss')
     const headerElement = document.createElement('div');
     headerElement.className = 'header';
 
+
+
+
     // add the profile picture
     const imageElement = document.createElement('img');
     imageElement.src = channelImage;
@@ -54,7 +57,7 @@ fetch(mastodonProfile + '.rss')
 
       const dateElement = document.createElement('p');
       const pubDate = new Date(item.querySelector("pubDate").textContent);
-      dateElement.textContent = `${""} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString().slice(0,5)} | `;
+      dateElement.textContent = `${""} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString().slice(0,5)}`;
       footerElement.appendChild(dateElement);
 
       const linkElement = document.createElement('a');

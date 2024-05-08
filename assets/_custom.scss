@@ -429,19 +429,30 @@ footer {
 .icon-bar-item,
 .icon-bar-item > a > svg,
 .icon-bar-item a,
-/*
-.darkmode,
-.darkmode label,
-*/
 .menu-search #search-icon,
 #toggle-label-light,
 #toggle-label-dark {
-    min-width: 24px !important;
-    width: 24px !important;
-    height: 24px !important;
+    min-width: 22px !important;
+    width: 22px !important;
+    height: 22px !important;
     margin: 0 auto !important;
     display: inline-block !important;
     background-color: transparent !important;
+}
+
+
+
+@media (max-width: 450px) {
+    .icon-bar-item,
+    .icon-bar-item > a > svg,
+    .icon-bar-item a,
+    .menu-search #search-icon,
+    #toggle-label-light,
+    #toggle-label-dark {
+        min-width: 24px !important;
+        width: 24px !important;
+        height: 24px !important;
+    }
 }
 
 
@@ -850,13 +861,17 @@ header #search-icon, .menu-search #search-icon {
 
 
 .mastodon-feed div.header {
-  background-color: var(--header-bg-color);
+  background-color: rgba(var(--color-purple-rgb), 0.2);
   max-height: 4.9rem;
   padding: 0.1rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   color: var(--body-font-color);
+  border: 1px solid lightgray;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: none;
 }
 
 .mastodon-feed div.header img {
@@ -901,10 +916,23 @@ header #search-icon, .menu-search #search-icon {
   font-size: 0.9em;
 }
 
+.mastodon-feed div.status:nth-child(2) {
+    border-top-color: transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+
+}
+
 .mastodon-feed div.status div.post-footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   border-top: 1px solid var(--div-details-border-color);
   font-size: smaller;
+  justify-content: space-between;
+}
+
+
+.inline-icon svg {
+  height: 1.1rem;
 }
