@@ -3,16 +3,8 @@
     <article class="markdown">
       <h1 class="title">{{ partial "docs/title.html" . }}</h1>
       <div class="content">{{partial "quartz/textprocessing" . }}</div>
-      <h3>Последние записи</h3>
-      <ul>
-        {{ range .Site.RegularPages.ByPublishDate.Reverse | first 10 }}
-          <li>{{ .Date.Format "02.01.06" }} — <a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-        {{end}}
-      </ul>
-
-
-
-
+      <h3>Мои посты на Mastodon</h3>
+      
 
 <p>
     <div id="mastodon-feed" class="mastodon-feed"></div>
