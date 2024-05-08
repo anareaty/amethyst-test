@@ -878,7 +878,7 @@ header #search-icon, .menu-search #search-icon {
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
   color: var(--body-font-color);
-  background-color: var(--color-purple);
+  background-color: rgba(var(--color-purple-rgb), 0.5);
   text-decoration: none;
   border-radius: 5px;
 }
@@ -896,6 +896,7 @@ header #search-icon, .menu-search #search-icon {
   border-radius: 4px;
   padding: 0 1rem;
   margin-bottom: 1rem;
+  font-size: 0.9em;
 }
 
 .mastodon-feed div.status div.post-footer {
