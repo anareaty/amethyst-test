@@ -54,7 +54,7 @@ fetch(mastodonProfile + '.rss')
 
       const dateElement = document.createElement('p');
       const pubDate = new Date(item.querySelector("pubDate").textContent);
-      dateElement.textContent = `${"Опубликовано"} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString().slice(0,5)} | `;
+      dateElement.textContent = `${""} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString().slice(0,5)} | `;
       footerElement.appendChild(dateElement);
 
       const linkElement = document.createElement('a');
