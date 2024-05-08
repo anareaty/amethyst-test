@@ -10,6 +10,46 @@
         {{end}}
       </ul>
 
+
+
+
+
+<p>
+    <div id="mastodon-feed" class="mastodon-feed"></div>
+    <script>
+      var i18n = {
+        followOnMastodon: "followOnMastodon",
+        viewOnMastodon: "viewOnMastodon",
+        publishedDateOnMastodon: "publishedDateOnMastodon"
+      };
+      var mastodonProfile = "{{ .Site.Params.mastodon }}";
+      var maxItems = "{{ default 5 .Site.Params.mastodonMaxItems }}"
+
+    </script>
+    {{- with resources.Get "js/mastodon.js" }}
+    {{- if eq hugo.Environment "development" }}
+      {{- with . | js.Build }}
+        <script src="{{ .RelPermalink }}"></script>
+      {{- end }}
+    {{- else }}
+      {{- $opts := dict "minify" true }}
+      {{- with . | js.Build $opts | fingerprint }}
+        <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+
+  </p>
+
+
+
+
+
+
+
+
+
+        
         
     </article> 
 {{ end }}
