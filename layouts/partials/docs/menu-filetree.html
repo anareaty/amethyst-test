@@ -43,7 +43,38 @@
   {{ $current := eq .page.RelPermalink .currentPageLink }}
   {{ $currentPage := .page.Site.GetPage (replace .currentPageLink "/" "")}}
   {{ $currentPageParent := $currentPage.Params.parent}}
-  {{ $ancestor := eq $currentPageParent .page.Params.filename}}
+  
+
+
+
+  {{ $ancestor := false}}
+
+  {{ $ancestor = eq $currentPageParent .page.Params.filename}}
+
+  {{if not $ancestor}}
+    {{if $currentPageParent}}
+      {{ $parentPage := .page.Site.GetPage $currentPageParent}}
+      {{ $currentPageGrandParent := $parentPage.Params.parent}}
+      {{ $ancestor = eq $currentPageGrandParent .page.Params.filename}}
+
+
+      {{if not $ancestor}}
+        {{if $currentPageGrandParent}}
+          {{ $grandParentPage := .page.Site.GetPage $currentPageGrandParent}}
+          {{ $currentPageGrandGrandParent := $grandParentPage.Params.parent}}
+          {{ $ancestor = eq $currentPageGrandGrandParent .page.Params.filename}}
+        {{end}}
+      {{end}}
+
+
+    {{end}}
+  {{end}}
+
+
+
+
+
+
 
   {{ $title := partial "docs/title" .page}}
 
@@ -56,9 +87,6 @@
     <label for="section-{{ md5 .page }}" class="flex">
       <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
         {{- $title -}}
-
-        
-
       </a>
     </label>
   {{ else if .page.Content }}
