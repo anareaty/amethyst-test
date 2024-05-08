@@ -54,7 +54,8 @@ menu:
 
 
 params:
-
+  mastodon: https://mastodon.social/@reaty
+  mastodonMaxItems: 5
   name: Anareaty
   title: Paperless Forest
 
