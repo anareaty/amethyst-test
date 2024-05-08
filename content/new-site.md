@@ -28,11 +28,11 @@ tags:
 
 Я сделала этот сайт для того, чтобы публиковать здесь свои идеи и заметки.
 
-Сайт сделан при помощи приложения [[../Obsidian (страница)|Obsidian]] и плагина [Github Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher), с использованием шаблона [Hugo](https://gohugo.io/). В качестве шаблона я использовала тему [Amethyst](https://amethyst.bencuan.me/), но изрядно допилила её под себя.
+Сайт сделан при помощи приложения [[./obsidian|Obsidian]] и плагина [Github Publisher](https://github.com/ObsidianPublisher/obsidian-github-publisher), с использованием шаблона [Hugo](https://gohugo.io/). В качестве шаблона я использовала тему [Amethyst](https://amethyst.bencuan.me/), но изрядно допилила её под себя.
 
 **Что я изменила:**
 - [x] добавила ленту блога;
-- [x] добавила поддержку [[../Кастомные чекбоксы в Obsidian|кастомных чекбоксов]];
+- [x] добавила поддержку [[./custom-checkboxes|кастомных чекбоксов]];
 - [x] убрала бэклинки и граф (потому что они глючат); 
 - [x] переписала стили;
 - [x] изменила работу некоторых метаданных;
