@@ -45,18 +45,27 @@
   {{ $currentPageParent := $currentPage.Params.parent}}
   {{ $ancestor := eq $currentPageParent .page.Params.filename}}
 
+  {{ $title := partial "docs/title" .page}}
+
+  {{if eq $title .page.Site.Params.Title}}
+    {{ $title = "Главная страница" }}
+  {{end}}
+
   {{ if .page.Params.collapse }}
     <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }}/>
     <label for="section-{{ md5 .page }}" class="flex">
       <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
-        {{- partial "docs/title" .page -}}
+        {{- $title -}}
+
+        
+
       </a>
     </label>
   {{ else if .page.Content }}
     <a href="{{ .page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
-      {{- partial "docs/title" .page -}}
+      {{- $title -}}
     </a>
   {{ else }}
-    <span class="book-menu-title">{{- partial "docs/title" .page -}}</span>
+    <span class="book-menu-title">{{- $title -}}</span>
   {{ end }}
 {{end}}
