@@ -847,10 +847,7 @@ header #search-icon, .menu-search #search-icon {
   
 }
 
-.status {
-  border: 1px solid lightgray;
-  border-radius: 4px;
-}
+
 
 .mastodon-feed div.header {
   background-color: var(--header-bg-color);
@@ -880,7 +877,6 @@ header #search-icon, .menu-search #search-icon {
   text-align: center;
   padding: 0.5rem 1rem;
   margin-right: 0.5rem;
-  max-width: 7rem;
   color: var(--body-font-color);
   background-color: var(--a-menu-bg-color-hover);
   text-decoration: none;
@@ -896,7 +892,8 @@ header #search-icon, .menu-search #search-icon {
 }
 
 .mastodon-feed div.status {
-  border: 1px solid var(--div-details-border-color);
+  border: 1px solid lightgray;
+  border-radius: 4px;
   padding: 1rem;
   padding-bottom:0;
   margin-bottom: 1rem;
