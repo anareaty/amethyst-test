@@ -33,7 +33,7 @@ fetch(mastodonProfile + '.rss')
     const followElement = document.createElement('a');
     followElement.className = 'follow-button';
     followElement.href = channelLink;
-    followElement.textContent = i18n.followOnMastodon;
+    followElement.textContent = "Подписаться";
     headerElement.appendChild(followElement);
 
     // close the header element
@@ -54,12 +54,12 @@ fetch(mastodonProfile + '.rss')
 
       const dateElement = document.createElement('p');
       const pubDate = new Date(item.querySelector("pubDate").textContent);
-      dateElement.textContent = `${i18n.publishedDateOnMastodon} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString()} | `;
+      dateElement.textContent = `${"Опубликовано"} ${pubDate.toLocaleDateString()} - ${pubDate.toLocaleTimeString()} | `;
       footerElement.appendChild(dateElement);
 
       const linkElement = document.createElement('a');
       linkElement.href = item.querySelector("link").textContent;
-      linkElement.textContent = i18n.viewOnMastodon;
+      linkElement.textContent = "Перейти";
       footerElement.appendChild(linkElement);
 
       statusElement.appendChild(footerElement);
