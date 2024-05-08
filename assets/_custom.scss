@@ -842,11 +842,12 @@ header #search-icon, .menu-search #search-icon {
 /* mastodon feed */
 
 .mastodon-feed {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 0px !important;
+  margin-right: 0px !important;
   max-height: 500px;
   overflow-y: scroll;
   border: 1px solid lightgray;
+  border-radius: 4px;
 }
 
 .mastodon-feed div.header {
