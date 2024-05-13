@@ -12,7 +12,7 @@ article ul {
 }
 
 article li {
-    padding: 0.15em 0;
+    margin: 0.3em 0;
 }
 
 .bare-header {
@@ -955,6 +955,10 @@ li:has(>svg.lucide) {
 
 li:has(svg.lucide-info) {
     --callout-color: var(--color-cyan-rgb);
+}
+
+li:has(svg.lucide-pen-tool) {
+    --callout-color: var(--color-purple-rgb);
 }
 
 
