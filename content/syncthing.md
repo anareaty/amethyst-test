@@ -1,17 +1,13 @@
 ---
 date: 2023-11-03
 cssclasses:
-  - show-backlinks
   - note
+  - show-backlinks
   - page
 tags: 
 Тип: страница
 Тема: 
-Статус:
-  - идея
 publishDate: 2024-03-19T13:28:00
-Ресурс:
-  - "[[Paperless Forest|🌱 Paperless Forest]]"
 path: content
 filename: syncthing
 parent: tech
@@ -20,9 +16,12 @@ share: true
 menu: true
 toc: false
 collapse: true
-weight: 20
+weight: 10
 feed: true
 Раздел: "[[Картотека]]"
+Статус заметки:
+  - 🌍 опубликовано
+  - ♻️ переработать
 ---
 
 Приложение для синхронизации файлов между устройствами (напрямую, без облаков).
