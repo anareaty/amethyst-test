@@ -4,6 +4,7 @@ publishDate: 2024-01-21T00:00:00
 cssclasses:
   - note
   - page
+  - hide-backlinks
 path: content
 filename: Canvas-style-menu-settings
 title: Пресет настроек для плагина Canvas Style Menu
