@@ -1,48 +1,52 @@
-
 <!DOCTYPE html>
 <html lang="{{ default .Site.Language.Lang .Site.LanguageCode  }}" dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
-
-{{ partial "main-head" . }}
-<input type="checkbox" class="hidden toggle" id="menu-control" />
-<label for="menu-control" class="hidden book-menu-overlay"></label>
+  <head>
+    {{ partial "html-head" . }}
+  </head>
   
-<body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
-
-  {{ partial "bare-header" . }}
-
-  {{ partial "quartz/search" . }}
-
   
-  <main class="main-container">
-    {{ partial "main-menu" . }}
-    
+  <body dir="{{ default "ltr" .Site.Language.LanguageDirection }}">
+     
+    {{ partial "main-header" . }}
+    {{ partial "search-container" . }}
 
-    <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
-      {{template "main" .}}
-    </div>
+    <main class="main-container">
+      {{ partial "main-menu" . }}
+      
+      <div class="book-page container {{ if default true (default .Site.Params.toc .Params.toc) }} with-toc {{ end }} ">
+        {{template "main" .}}
+      </div>
 
-    {{ if default true (default .Site.Params.toc .Params.toc) }}
-      <aside class="book-toc">
-        <div class="book-toc-content">
-          {{ template "toc" . }}
-        </div>
-      </aside>
-    {{ end }}
-    
-  </main>
-  
-</body>
+      {{ if default true (default .Site.Params.toc .Params.toc) }}
+        <aside class="book-toc">
+          <div class="book-toc-content">
+            {{ .TableOfContents }}
+          </div>
+        </aside>
+      {{ end }}
+      
+    </main>
+  </body>
 </html>
 
 
 
 
 {{ define "main" }}
-    {{ partial "main-content" . }} <!-- Page Content -->
-    {{ partial "comments" . }} <!-- Comments block -->
+  <!-- Page Content --> 
+  <article class="markdown">
+    <h1 class="title">{{ partial "title.html" . }}</h1>
+    {{ partial "post-meta" . }}
+    <div class="content">
+      {{partial "textprocessing" . }}
+    </div>
+    {{ partial "children-list" . }}  <!-- Inner notes (for folder files) -->
+    {{ partial "backlinks" . }}
+  </article> 
+
+  <!-- Comments block -->
+  {{ partial "comments" . }} 
 {{ end }}
 
 
-{{ define "toc" }}
-  {{ .TableOfContents }}
-{{ end }}
+
