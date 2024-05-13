@@ -1,5 +1,6 @@
 ---
-date: 2023-11-03
+date: 2024-03-19
+publishDate: 2024-03-19T13:28:00
 cssclasses:
   - note
   - show-backlinks
@@ -7,7 +8,6 @@ cssclasses:
 tags: 
 Тип: страница
 Тема: 
-publishDate: 2024-03-19T13:28:00
 path: content
 filename: syncthing
 parent: tech
