@@ -4,8 +4,7 @@ publishDate: 2023-09-07T00:00:00
 cssclasses:
   - note
 Тип: страница
-Тема:
-  - "[[Публикации/Публикации|Публикации]]"
+Тема: []
 path: content
 filename: _index
 title: Paperless Forest
