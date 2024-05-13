@@ -14,5 +14,5 @@
     --g-link-active: #5a7282;
   }
 </style>
-{{ $js := resources.Get "quartz/js/graph.js" | resources.Fingerprint "md5" }}
+{{ $js := resources.Get "js/graph.js" | resources.Fingerprint "md5" }}
 <script src="{{ $js.Permalink }}"></script>
