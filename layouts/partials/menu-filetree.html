@@ -76,7 +76,7 @@
 
 
 
-  {{ $title := partial "docs/title" .page}}
+  {{ $title := partial "title" .page}}
 
   {{if eq $title .page.Site.Params.Title}}
     {{ $title = "Главная страница" }}

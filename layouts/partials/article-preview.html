@@ -1,13 +1,13 @@
  <article class="blog-header">
           <h2 class="article-title">
-              <a href="{{ .RelPermalink }}">{{ partial "docs/title.html" . }}</a>
+              <a href="{{ .RelPermalink }}">{{ partial "title.html" . }}</a>
           </h2>
-          {{ partial "docs/post-meta" . }}
+          {{ partial "post-meta" . }}
             <p>
               {{if .Params.summary}}
                 {{.Params.summary}}
               {{else}}
-                {{partial "quartz/textprocessing" . | safeHTML | truncate 500}}
+                {{partial "textprocessing" . | safeHTML | truncate 500}}
               {{end}}
               
           </p>

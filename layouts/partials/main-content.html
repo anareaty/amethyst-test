@@ -1,9 +1,9 @@
 <article class="markdown">
-    <h1 class="title">{{ partial "docs/title.html" . }}</h1>
-    {{ partial "docs/post-meta" . }}
+    <h1 class="title">{{ partial "title.html" . }}</h1>
+    {{ partial "post-meta" . }}
     
-    <div class="content">{{partial "quartz/textprocessing" . }}</div>
+    <div class="content">{{partial "textprocessing" . }}</div>
     
     {{ partial "children-list" . }}
-    {{ partial "quartz/backlinks" . }}
+    {{ partial "backlinks" . }}
 </article>
