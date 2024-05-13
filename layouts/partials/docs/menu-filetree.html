@@ -1,0 +1,99 @@
+{{ $pages := where .Site.Pages "Params.menu" "==" true }}
+{{ $currentPageLink := .Page.RelPermalink}}
+{{ $topPages := where $pages "Params.weight" "<" 10}}
+{{ $bottomPages := where $pages "Params.weight" ">=" 10}}
+<ul class="menuTopPages">
+{{ range $topPages }}
+  {{if not .Params.parent}}
+    {{ template "section-children" (dict "page" . "currentPageLink" $currentPageLink) }}
+  {{end}}
+{{end}}
+</ul>
+<ul class="menuBottomPages">
+{{ range $bottomPages }}
+  {{if not .Params.parent}}
+    {{ template "section-children" (dict "page" . "currentPageLink" $currentPageLink) }}
+  {{end}}
+{{end}}
+</ul>
+
+
+
+{{ define "section-children" }}
+
+  {{ $args := . }}
+  {{ $pages := where .page.Site.Pages "Params.menu" "==" true }}
+  {{ $parentName := .page.Params.filename }}
+  
+   <li>{{ template "page-link" . }}
+   <ul>
+     {{ range $pages }} 
+     {{ if eq .Params.parent $parentName }}
+       {{ template "section-children" (dict "page" . "currentPageLink" $args.currentPageLink) }}
+     {{end}}
+     {{end}}
+   </ul>
+     </li>
+{{end}}
+
+
+
+{{define "page-link"}}
+
+  {{ $current := eq .page.RelPermalink .currentPageLink }}
+  {{ $currentPage := .page.Site.GetPage (replace .currentPageLink "/" "")}}
+  {{ $currentPageParent := $currentPage.Params.parent}}
+  
+
+
+
+  {{ $ancestor := false}}
+
+  {{ $ancestor = eq $currentPageParent .page.Params.filename}}
+
+  {{if not $ancestor}}
+    {{if $currentPageParent}}
+      {{ $parentPage := .page.Site.GetPage $currentPageParent}}
+      {{ $currentPageGrandParent := $parentPage.Params.parent}}
+      {{ $ancestor = eq $currentPageGrandParent .page.Params.filename}}
+
+
+      {{if not $ancestor}}
+        {{if $currentPageGrandParent}}
+          {{ $grandParentPage := .page.Site.GetPage $currentPageGrandParent}}
+          {{ $currentPageGrandGrandParent := $grandParentPage.Params.parent}}
+          {{ $ancestor = eq $currentPageGrandGrandParent .page.Params.filename}}
+        {{end}}
+      {{end}}
+
+
+    {{end}}
+  {{end}}
+
+
+
+
+
+
+
+  {{ $title := partial "docs/title" .page}}
+
+  {{if eq $title .page.Site.Params.Title}}
+    {{ $title = "Главная страница" }}
+  {{end}}
+
+  {{ if .page.Params.collapse }}
+    <input type="checkbox" id="section-{{ md5 .page }}" class="toggle" {{ if or $current $ancestor }}checked{{ end }}/>
+    <label for="section-{{ md5 .page }}" class="flex">
+      <a {{ if .page.Content }}href="{{ .page.RelPermalink }}"{{ else }}role="button"{{ end }} class="book-collapse-toggle {{ if $current }}active{{ end }}">
+        {{- $title -}}
+      </a>
+    </label>
+  {{ else if .page.Content }}
+    <a href="{{ .page.RelPermalink }}" class="{{ if $current }}active{{ end }}">
+      {{- $title -}}
+    </a>
+  {{ else }}
+    <span class="book-menu-title">{{- $title -}}</span>
+  {{ end }}
+{{end}}

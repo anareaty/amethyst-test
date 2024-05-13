@@ -1,0 +1,24 @@
+{{ $fileName := .Params.filename }}
+{{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+{{ $children := slice }}
+
+
+{{ range $pages}}
+{{ if eq .Params.parent $fileName}}
+{{ $children = $children | append . }}
+{{ end }}
+{{ end }}
+
+{{ if gt (len $children) 0 }}
+<div class="children-list">
+<h4>Заметки по теме</h4>
+<div class="children">
+  <ul>
+    {{ range $children }}
+	    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</div>
+</div>
+
+{{ end }}
