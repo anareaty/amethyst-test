@@ -8,6 +8,7 @@ cssclasses:
 Тема: 
 tags: 
 Статус заметки:
+  - 📤 к публикации
   - ✨ закончено
   - 🌍 опубликовано
 filename: change-history
@@ -18,8 +19,9 @@ feed: false
 menu: false
 toc: false
 collapse: false
-weight: 1
+weight: 10
 Раздел: "[[Картотека]]"
+path: content
 ---
 
 ### 13 мая 2024
