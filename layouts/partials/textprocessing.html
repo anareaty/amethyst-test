@@ -225,7 +225,9 @@
 
 {{ $content = $content | replaceRE "href=\"\"" "href=\"/\"" }}
 
+{{ $content = $content | replaceRE "(href=)([^ ]*)(\/_index)" "$1$2/" }}
 
+  
 
 {{ $content | safeHTML }}
 
