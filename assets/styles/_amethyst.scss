@@ -601,6 +601,23 @@ footer {
 }
 
 
+@media (max-width: 52rem) {
+    .icon-bar-item,
+.icon-bar-item > a > svg,
+.icon-bar-item a,
+.menu-search #search-icon,
+#toggle-label-light,
+#toggle-label-dark {
+    min-width: 22px !important;
+    width: 22px !important;
+    height: 22px !important;
+    }
+
+    .icons-bar {
+    grid-template-columns: repeat(auto-fit, 35px);
+    }
+}
+
 
 @media (max-width: 450px) {
     .icon-bar-item,
