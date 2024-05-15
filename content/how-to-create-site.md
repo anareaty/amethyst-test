@@ -24,6 +24,7 @@ tags:
 Раздел: "[[Картотека]]"
 Тема:
   - "[[Obsidian|Obsidian]]"
+URL: https://paperless-forest.ru/how-to-create-site/
 ---
 
 ## Преамбула
