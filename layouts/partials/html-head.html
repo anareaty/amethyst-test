@@ -21,8 +21,10 @@
 {{- end -}}
 
 <!-- Theme stylesheet, you can customize scss by creating `assets/custom.scss` in your website -->
+<!--
 {{- $styles := resources.Get "styles/book.scss" | resources.ExecuteAsTemplate "book.scss" . | resources.ToCSS | resources.Minify | resources.Fingerprint }}
 <link rel="stylesheet" href="{{ $styles.RelPermalink }}" {{ template "integrity" $styles }}>
+-->
 
 {{- if default true .Site.Params.BookSearch -}}
   {{- $searchJSFile := printf "%s.search.js" .Language.Lang }}
@@ -244,7 +246,7 @@ https://github.com/alex-shpak/hugo-book
     addCopyButtons();
     {{ end }}
 
-    {{if $data.enableCodeBlockTitle | default $.Site.Params.enableCodeBlockTitle -}}
+    {{if $data.enableCodeBlockTitle | default $.Site.Params.enableTitle -}}
     addTitleToCodeBlocks();
     {{- end -}}
     {{if $data.enableLatex | default $.Site.Params.enableLatex}}

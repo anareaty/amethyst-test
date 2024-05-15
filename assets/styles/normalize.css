@@ -19,11 +19,11 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-
+/*
 body {
   margin: 0;
 }
-
+*/
 /**
  * Render the `main` element consistently in IE.
  */
@@ -38,7 +38,7 @@ main {
  */
 
 h1 {
-  font-size: 2em;
+  /*font-size: 2em;*/
   margin: 0.67em 0;
 }
 

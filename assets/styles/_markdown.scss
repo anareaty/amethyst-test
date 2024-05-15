@@ -4,9 +4,11 @@
   line-height: 1.6;
 
   // remove padding at the beginning of page
+  /*
   > :first-child {
     margin-top: 0;
   }
+  */
 
   h1,
   h2,
@@ -14,10 +16,9 @@
   h4,
   h5,
   h6 {
-    font-weight: normal;
+    font-weight: bold;
     line-height: 1;
-    margin-top: 1.5em;
-    margin-bottom: $padding-16;
+
 
     a.anchor {
       opacity: 0;

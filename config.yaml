@@ -127,3 +127,7 @@ params:
   #BookSearch: false
   #BookServiceWorker: false
   #BookPortableLinks: false
+
+
+pygmentsUseClasses: true
+pygmentsCodeFences: true
