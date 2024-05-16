@@ -1278,8 +1278,8 @@ li:has(svg.lucide-quote) {
     font-size: 0.95em !important;
 }
 
-.mastodon-header .inline-icon {
-    display: inline-block;
+.mastodon-header .inline-icon svg {
+    
     margin-right: 5px;
     height: 0.8em !important;
     width: 0.8em !important;
