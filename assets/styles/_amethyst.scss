@@ -1262,7 +1262,7 @@ li:has(svg.lucide-quote) {
 
 .book-menu-content a {
     font-size: 0.95em;
-    font-weight: 500;
+    font-weight: 500 ;
 }
 
 
@@ -1274,6 +1274,6 @@ li:has(svg.lucide-quote) {
 }
 
 .mastodon-header {
-    font-size: 0.9em;
-    font-weight: 500;
+    font-size: 0.9em !important;
+    font-weight: 500 !important;
 }
