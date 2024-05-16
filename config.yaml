@@ -59,7 +59,7 @@ params:
   title: Paperless Forest
 
   mastodon: https://mastodon.social/@reaty
-  mastodonMaxItems: 10
+  mastodonMaxItems: 5
 
   
 
