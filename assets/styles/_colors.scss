@@ -58,7 +58,7 @@
 :root {
     --light: var(--color-base-00);
     --dark: var(--color-base-80);
-    --secondary: #447094;
+    --secondary: rgb(93, 129, 172);
     --tertiary: #7394af;
     --visited: #7394af;
     --primary: var(--color-orange);
@@ -81,6 +81,7 @@
     --light: var(--color-base-100) !important;
     --dark: var(--color-base-10) !important;
     --secondary: #b1c0fc !important;
+
     --visited: #92a8ff !important;
     --tertiary: #92a8ff !important;
     --primary: var(--color-orange);
