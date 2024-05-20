@@ -47,11 +47,9 @@ tags:
 .theme-light {
 --image-filter: <фильтр для светлой темы>;
 }
-
 .theme-dark {
 --image-filter: <фильтр для тёмной темы>;
 }
-
 .image-embed[src*="recolor-image"] img {
   filter:  var(--image-filter);
 }
