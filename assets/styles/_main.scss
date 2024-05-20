@@ -2303,3 +2303,12 @@ pre.chroma {
 .katex {
   font-size: 1.1em !important;
 }
+
+
+
+
+
+
+article p:has(img) {
+  text-align: center;
+}
