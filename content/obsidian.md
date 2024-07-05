@@ -13,8 +13,8 @@ toc: false
 collapse: true
 weight: 10
 Статус заметки:
-  - 📝 дописать
-  - 🌍 опубликовано
+  - 📢 опубликовано
+  - ✨ закончено
 tags:
   - Obsidian
 aliases:

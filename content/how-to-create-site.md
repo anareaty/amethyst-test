@@ -14,17 +14,17 @@ feed: true
 toc: true
 collapse: false
 weight: 10
+Тип: страница
+Раздел: "[[Сайт]]"
+Тема:
+  - "[[Obsidian|Obsidian]]"
 Статус заметки:
   - ✨ закончено
-  - 🌍 опубликовано
+  - 📢 опубликовано
+Ссылка: https://paperless-forest.ru/how-to-create-site/
 tags:
   - Obsidian
   - Quartz
-Тип: страница
-Раздел: "[[Картотека]]"
-Тема:
-  - "[[Obsidian|Obsidian]]"
-Ссылка: https://paperless-forest.ru/how-to-create-site/
 ---
 
 ## Преамбула
