@@ -1,0 +1,4 @@
+---
+share: true
+path: content
+---
