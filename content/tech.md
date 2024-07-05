@@ -1,0 +1,25 @@
+---
+date: 2024-02-08
+cssclasses:
+  - note
+  - page
+path: content
+filename: tech
+title: Технологии
+share: true
+menu: true
+feed: false
+toc: false
+collapse: true
+weight: 10
+Тип: страница
+tags: 
+Тема:
+  - "[[Публикации/Публикации|Публикации]]"
+Раздел: "[[Картотека]]"
+Статус заметки:
+  - 📤 к публикации
+publishDate: 
+parent: 
+---
+
