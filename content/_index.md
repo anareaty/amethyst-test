@@ -32,5 +32,3 @@ tags:
 Сайт всё ещё находится в процессе настройки, и всё может поменяться! Все основные нововведения отображаются в [[./change-history|истории изменений]]. 
 
 Мне можно отправить пожертвование: 
-
-<iframe src="https://yoomoney.ru/quickpay/fundraise/button?billNumber=15V2GR0CC8B.241018&" width="330" height="50" frameborder="0" allowtransparency="true" scrolling="no"></iframe>
