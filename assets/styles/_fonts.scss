@@ -9,6 +9,27 @@
   font-weight: normal;
 }
 
+@font-face {
+  font-family: "Philosopher";
+  src: url("/fonts/Philosopher-Bold.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("/fonts/Philosopher-Italic.ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Philosopher";
+  src: url("/fonts/Philosopher-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
 :root {
   --font-body: "Noto Sans", "Century Gothic", sans-serif;
   --font-header: "Philosopher", "Merriweather", serif;
