@@ -30,8 +30,36 @@
   font-weight: bold;
 }
 
+
+  font-family: "Inglobal";
+  src: url("/fonts/inglobal.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inglobal";
+  src: url("/fonts/inglobalb.ttf");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Inglobal";
+  src: url("/fonts/inglobali.ttf");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Inglobal";
+  src: url("/fonts/inglobalbi.ttf");
+  font-style: italic;
+  font-weight: bold;
+}
+
 :root {
-  --font-body: "Noto Sans", "Century Gothic", sans-serif;
+  --font-body: "Inglobal", "Noto Sans", "Century Gothic", sans-serif;
   --font-header: "Philosopher", "Merriweather", serif;
   --font-mono: "Source Code Pro", monospace;
 }
