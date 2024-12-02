@@ -15,7 +15,7 @@ menu: true
 feed: false
 toc: false
 collapse: false
-weight: 10
+weight: 3
 Класс: "[[Страница|Страница]]"
 tags: 
 ---
