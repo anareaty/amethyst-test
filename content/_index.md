@@ -11,7 +11,7 @@ menu: true
 feed: false
 toc: false
 collapse: false
-weight: 10
+weight: 1
 Статус заметки:
   - ✨ закончено
   - 📢 опубликовано
